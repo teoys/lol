@@ -1,0 +1,64 @@
+.text1, .text2 {
+			font-family: Calibri;
+		}
+		
+		.text1 {
+			color: aqua;
+			transition: color 0.25s;
+		}
+		.text1:active {
+			color: red;
+		}
+
+		.text2 {
+			color: white;
+		}
+
+		a {
+			color: #e18fff;
+			
+		}
+		
+		a:hover {
+			color: #ebb4ff;
+		}
+		
+		a:active {
+			color: #69387a;
+		}
+		
+		body {
+			margin-left: 15%;
+			margin-right: 15%;
+			background-image: url('../images/bg.jpg');
+			background-repeat: no-repeat;
+            background-size: cover;
+             
+		}
+
+		.kartinka {
+			border-radius: 5px;
+			transition: border-radius 0.25s, width 0.5s;
+			animation: kfly 5s ease-in-out infinite;
+		}
+
+		.kartinka:hover {
+			border-radius: 20px;
+		}
+		
+		.kartinka:active {
+			border-radius: 50px;
+			width: 450px;
+		}
+		
+		@keyframes kfly {
+			0% {
+				border-radius: 5px;
+			}
+			50% {
+				border-radius: 20px;
+			}
+			100% {
+				border-radius: 5px;
+			}
+		}
